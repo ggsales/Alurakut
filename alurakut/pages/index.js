@@ -28,11 +28,12 @@ export default function Home() {
   const [comunidades, setComunidades] = React.useState([{
       id: '1212212324342545343453453464546',
       title: 'Eu odeio acordar cedo',
-      image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg'
+      image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg',
   }]);
   //const comunidades = ['Alurakut']
   const pessoasFavoritas = [
-    'franklinsales'
+    'franklinsales',
+    'Matheusaors'
   ]
 
   return (
