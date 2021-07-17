@@ -1,4 +1,4 @@
-<span align = "center">
+<span align="center">
 # Projeto Alurakut - Imersão React da Alura
 </span>  
 
