@@ -22,19 +22,56 @@ function ProfileSidebar(propriedades){
     </Box>
   )
 }
+function ProfileRelationsBox(propriedades){
+  return(
+    <ProfileRelationsBoxWrapper>
+            <h2 className="smallTitle">
+             {propriedades.title} ({propriedades.items.length})
+            </h2>
+             <ul>
+              { /*seguidores.map((itemAtual)=> {
+                return (
+                  <li key={itemAtual}>
+                    <a href={`/https://github.com/${itemAtual}.png`}>
+                      <img src={itemAtual.image} />
+                      <span>{itemAtual.title}</span>
+                    </a>
+                  </li>
+                )
+              })} */}
+            </ul>
+          </ProfileRelationsBoxWrapper>
+  )
+}
 
 export default function Home() {
   const usuarioAleatorio = 'ggsales';
   const [comunidades, setComunidades] = React.useState([{
       id: '1212212324342545343453453464546',
-      title: 'Eu odeio acordar cedo',
-      image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg',
+      title: 'eu amo CSS',
+      image: 'https://ayltoninacio.com.br/img/p/53w750.jpg',
+
   }]);
   //const comunidades = ['Alurakut']
   const pessoasFavoritas = [
+    'juunegreiros',
+    'omariosouto',
+    'peas',
     'franklinsales',
     'Matheusaors'
+    
+    
   ]
+  const [seguidores, setSeguidores] = React.useState([]);
+  React.useEffect(function(){
+   fetch('https://api.github.com/users/ggsales/followers')
+   .then(function (respostaDoServidor){
+      return respostaDoServidor.json();
+      })
+   .then(function(respostaCompleta){
+        setSeguidores(respostaCompleta);
+    })
+  }, []);
 
   return (
     <>
@@ -46,7 +83,7 @@ export default function Home() {
         <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
           <Box>
             <h1 className="title">
-              Bem vindo
+              Bem vindo(a)
             </h1>
             
             <OrkutNostalgicIconSet />
@@ -93,6 +130,7 @@ export default function Home() {
           
         </div>
         <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
+          <ProfileRelationsBox title="Seguidores" items={seguidores}/>
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
               Comunidades ({comunidades.length})
