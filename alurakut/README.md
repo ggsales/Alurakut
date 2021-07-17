@@ -1,5 +1,5 @@
 <span align="center">
-# Projeto Alurakut - Imersão React da Alura
+## Projeto Alurakut - Imersão React da Alura
 </span>  
 
 
