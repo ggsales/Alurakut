@@ -90,7 +90,7 @@ export default function Home() {
           </Box>
           
           <Box>
-            <h2 className="subTitle">O que você deseja fazer? </h2>
+            <h2 className="subTitle">Crie sua comunidade </h2>
             <form onSubmit={function handleCriaComunidade(e){
                 e.preventDefault();
                 const dadosDoForm = new FormData(e.target);
