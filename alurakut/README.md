@@ -5,7 +5,7 @@
 
 ### Projeto Alurakut, realizado durante a Imersão React da Alura. Inspirado no design do saudoso Orkut!<br>
 
-  Além de vivenciar todo o já conhecido layout da antiga rede social, o  projeto traz a experiência nostálgica de poder adicionar suas comunidades favoritas. Para a criação do mesmo, foi necessário o uso de React, Styled-Components e Nextjs.  
+  Além de vivenciar todo o já conhecido layout da antiga rede social, o  projeto traz a experiência nostálgica de poder adicionar suas comunidades favoritas entre outras coisas. Para a criação do mesmo, foi necessário o uso de React, Styled-Components e Nextjs.  
 
 ### [Clique aqui para acompanhar  a atual versão do projeto(ainda em desenvolvimento).](https://vercel.com/ggsales/alurakut/69ZNagFcFyKzakjC92eXbgNZCHux/)
 
