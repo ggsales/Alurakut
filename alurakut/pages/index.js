@@ -52,6 +52,7 @@ export default function Home() {
   const pessoasFavoritas = [
     'juunegreiros',
     'omariosouto',
+    'peas',
     'franklinsales',
     'Matheusaors'
     
