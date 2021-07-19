@@ -54,14 +54,14 @@ export default function Home() {
     'omariosouto',
     'peas',
     'franklinsales',
-    'Matheusaors'
-    
+    'Matheusaors',
     
   ]
+
   const [seguidores, setSeguidores] = React.useState([]);
   React.useEffect(function(){
     //GET 
-   fetch('https://api.github.com/users/ggsales/followers')
+   fetch(`https://api.github.com/users/ggsales/followers`)
    .then(function (respostaDoServidor){
       return respostaDoServidor.json();
       })
