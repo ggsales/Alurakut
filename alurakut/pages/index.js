@@ -55,9 +55,6 @@ export default function Home(props) {
     'juunegreiros',
     'omariosouto',
     'peas',
-    'franklinsales',
-    'Matheusaors',
-    
   ]
 
   const [seguidores, setSeguidores] = React.useState([]);
