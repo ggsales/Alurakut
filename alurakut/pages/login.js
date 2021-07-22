@@ -1,6 +1,6 @@
 import React from 'react';
 //hook do nextjs
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import nookies from 'nookies'
 
 export default function LoginScreen() {
@@ -21,6 +21,9 @@ const [githubUser, setGithubUser ] = React.useState('');
         <section className="formArea">
           <form className="box"  onSubmit={(infosDoEvento) =>{
                 infosDoEvento.preventDefault();
+                if(!githubUser){
+                  return   
+                }
                 
                 fetch('https://alurakut.vercel.app/api/login', {
                     method : 'POST',

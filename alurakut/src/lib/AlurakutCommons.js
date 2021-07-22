@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import NextLink from 'next/link';
-
 const BASE_URL = 'http://alurakut.vercel.app/';
 const v = '1';
 
@@ -35,7 +34,7 @@ export function AlurakutMenu({ githubUser }) {
         </nav>
 
         <nav>
-          <a href={`/logout`}>
+          <a href={`/login`}>
             Sair
           </a>
           <div>
@@ -188,6 +187,10 @@ export function AlurakutProfileSidebarMenuDefault() {
   return (
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
+      <a href="/">
+          <p style={{fontSize:'15px'}}>Online</p>
+          <img src= {"https://img.icons8.com/emoji/452/green-circle-emoji.png"} />
+          </a>
         <a href="/">
           <img src={`${BASE_URL}/icons/user.svg`} />
             Perfil
@@ -200,18 +203,36 @@ export function AlurakutProfileSidebarMenuDefault() {
           <img src={`${BASE_URL}/icons/camera.svg`} />
             Fotos
           </a>
-        <a href="/">
+          <a href="/">
+          <img src={`${BASE_URL}/icons/video-camera.svg`} />
+            Videos
+          </a>
+          <a href="/">
           <img src={`${BASE_URL}/icons/sun.svg`} />
             Depoimentos
           </a>
+        <a href="https://www.clickjogos.com.br/jogos/fazenda-feliz">
+          <img src={"https://img.ibxk.com.br/dl/9/92a5a4574255eade7341eed92e6b6b08/uolthumb.png?w=65&h=65&404=cjmobile&mode=crop&scale=both&format=jpg"} />
+            Game - Fazenda Feliz
+          </a>
+          <a href="https://tetris.com/play-tetris/">
+            <img src={"https://static.jogojogar.com/9/50889/33357/1200x630/tetris-1.webp"} />
+            Game- Tetris
+          </a>
+          <a href="https://ddtankbrasil.com.br/pt/ddtank/">
+            <img src={"https://i.imgur.com/fBZopgs.png"} />
+            Game- Ddtank
+          </a>
+          <p>convidar amigos por e-mail</p>
+          <input type="text" style={{ borderRadius: '2px', height: '5px', width: '98%', backgroundColor: "#fff", border: '1px solid ' }}>
+          </input>
+          <button>
+            convidar
+          </button>
       </nav>
       <hr />
       <nav>
-        <a href="/">
-          <img src={`${BASE_URL}/icons/plus.svg`} />
-            GitHub Trends
-          </a>
-        <a href="/logout">
+        <a href="/login">
           <img src={`${BASE_URL}//icons/logout.svg`} />
             Sair
           </a>
