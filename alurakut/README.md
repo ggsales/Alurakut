@@ -7,11 +7,11 @@
 
   Além de vivenciar todo o já conhecido layout da antiga rede social, o  projeto traz a experiência nostálgica de poder adicionar suas comunidades favoritas, entre outras coisas. Para a criação do mesmo, foi necessário o uso de React, Styled-Components e NextJs.  
 
-### [Clique aqui para acompanhar  a atual versão do projeto(ainda em desenvolvimento).](https://alurakut-32c5guriw-ggsales.vercel.app/login)
+### [Clique aqui para acompanhar  a atual versão do projeto.](https://alurakut-ggsales.vercel.app/login)
 
   
 ### Preview:
-![Captura de tela 2021-07-17 194200](https://user-images.githubusercontent.com/67559431/126052071-50236ebb-e37b-41c6-820b-55317df42994.png)
+![Captura de tela 2021-07-21 230345](https://user-images.githubusercontent.com/67559431/126581190-595e6065-3936-4ce8-ba47-5c2a96be5cc6.png)
 
 
 ## Linguagens e tecnologias utilizadas:
